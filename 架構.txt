@@ -1,0 +1,12 @@
+進入網頁(index.html)
+↓
+登入(login.html + login_run.php)、註冊(enroll.html + enroll_run.php)
+↓
+留言板網頁(mess.php + SELECT搜尋)
+<送出留言(mess_insert.php)
+<搜尋留言(mess_search.php)
+<刪除留言(mess_delete.php)
+<登出(logout.php)
+
+p.s. 190907改註冊、刪除、登入程式碼
+
