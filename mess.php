@@ -33,14 +33,7 @@ eot;
 	print $web;
 	
 	//連線資料庫
-	$con = @mysqli_connect("localhost","yun","samyT816nK");
-	if(mysqli_connect_errno($con))
-		die("連線失敗");
-	
-	echo "連結成功"."<br>";
-	
-	//選擇資料庫
-	mysqli_select_db($con, "test");
+	require_once("connect.php");
 	
 	//查詢資料表
 	$sql = "SELECT * FROM message";

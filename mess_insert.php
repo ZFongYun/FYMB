@@ -4,14 +4,7 @@
 	$name = $_SESSION['username']; //用戶名稱
 	
 	//連線資料庫
-	$con = @mysqli_connect("localhost","yun","samyT816nK");
-	if(mysqli_connect_errno($con))
-		die("無法連線");
-	
-	echo "連結成功"."<br>";
-	
-	//選擇資料庫
-	mysqli_select_db($con, "test"); //指定資料庫
+	require_once("connect.php");
 	
 	if($mess != null) //判斷送出留言是否為空值
 	{

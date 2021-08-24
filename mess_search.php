@@ -2,14 +2,9 @@
 	$keyword = $_POST['s']; //關鍵字
 	
 	//連線資料庫
-	$con = @mysqli_connect("localhost","yun","samyT816nK");
-	if(mysqli_connect_errno($con))
-		die("無法連線");
+	require_once("connect.php");
 	
 	echo "連結成功"."<br>"."========搜尋結果========";
-	
-	//選擇資料庫
-	mysqli_select_db($con, "test");
 	
 	$sql = "SELECT * FROM message WHERE mess LIKE '%$keyword%'";
 	$cg = mysqli_query($con, $sql);

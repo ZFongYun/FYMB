@@ -3,14 +3,7 @@
 	$pw = $_POST['pw']; //密碼
 	
 	//連線資料庫
-	$con = @mysqli_connect("localhost","yun","samyT816nK");
-	if(mysqli_connect_errno($con))
-		die("連線失敗");
-		
-	echo "連結成功"."<br>";
-	
-	//選擇資料庫
-	mysqli_select_db($con,"test");
+	require_once("connect.php");
 	
 	$sql_select = "SELECT * FROM member WHERE user = '$user'";
 	$cg = mysqli_query($con,$sql_select);
