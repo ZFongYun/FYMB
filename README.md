@@ -1,6 +1,8 @@
 ## 簡易留言版
 提供用戶註冊登入、訊息留言等功能。
 
+![簡易留言版](https://user-images.githubusercontent.com/53658361/179456319-8e5be38a-368f-47e4-8656-b8d3ad448bf0.png)
+
 ### 安裝
 1. 在terminal輸入`https://github.com/ZFongYun/FYMB.git`下載專案資料夾
 2. 開啟網頁虛擬器(XAMPP...etc)，為專案配置虛擬目錄，以及新增資料庫、資料表
